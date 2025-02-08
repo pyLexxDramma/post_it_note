@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Note</title>
+</head>
+<body>
+    <h1>Create Note</h1>
+    <form method="POST">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.content.label }}<br>
+            {{ form.content(size=40) }}<br>
+        </div>
+        <div>
+            {{ form.category.label }}<br>
+            {{ form.category(size=40) }}<br>
+        </div>
+        <div>
+            {{ form.reminder_time.label }}<br>
+            {{ form.reminder_time(size=40, placeholder='YYYY-MM-DD HH:MM:SS') }}<br>
+        </div>
+        <div>
+            {{ form.submit() }}
+        </div>
+    </form>
+    <a href="{{ url_for('notes') }}">Back to Notes</a>
+</body>
+</html>

@@ -1,0 +1,114 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Light background for better contrast */
+    color: #343a40; /* Dark text for readability */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for theme change */
+}
+
+nav {
+    margin-bottom: 20px;
+    background-color: #007bff; /* Bootstrap primary color */
+    padding: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease; /* Smooth transition for theme change */
+}
+
+nav a {
+    color: white; /* White text for links in the navbar */
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for better UX */
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: white; /* White background for forms */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for theme change */
+}
+
+h1 {
+    text-align: center; /* Centered headings */
+    color: #007bff; /* Bootstrap primary color for headings */
+    transition: color 0.3s ease; /* Smooth transition for theme change */
+}
+
+form {
+    margin-top: 10px;
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+button {
+    margin-left: 10px;
+}
+
+.list-group-item {
+    display: flex;
+    justify-content: space-between; /* Space between note content and actions */
+    align-items: center; /* Center items vertically */
+    opacity: 0; /* Initial opacity for animation */
+    transition: opacity 0.5s ease-in-out, background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.list-group-item.visible {
+    opacity: 1; /* Make notes visible when class is added */
+}
+
+.btn {
+    margin-left: 5px; /* Space between buttons */
+}
+
+footer {
+    text-align: center; /* Centered footer */
+    margin-top: 20px; /* Space above footer */
+    color: #6c757d; /* Bootstrap secondary color for footer text */
+    transition: color 0.3s ease; /* Smooth transition for theme change */
+}
+
+/* Dark theme styles */
+body.dark-theme {
+    background-color: #212529; /* Dark background */
+    color: #f8f9fa; /* Light text */
+}
+
+body.dark-theme nav {
+    background-color: #343a40; /* Darker navbar */
+}
+
+body.dark-theme .container {
+    background-color: #343a40; /* Darker container */
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1); /* Subtle white shadow */
+}
+
+body.dark-theme h1 {
+    color: #f8f9fa; /* Light heading */
+}
+
+body.dark-theme .list-group-item {
+    background-color: #343a40; /* Dark list item */
+    color: #f8f9fa; /* Light text */
+}
+
+body.dark-theme footer {
+    color: #f8f9fa; /* Light text */
+}
+
+body.dark-theme .btn-outline-secondary {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+body.dark-theme .btn-outline-secondary:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
